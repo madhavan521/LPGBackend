@@ -21,7 +21,7 @@ const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TO
 const otpStorage = {};
 app.use(express.json())
 app.use(cors({
-    origin: 'http://localhost:3000', 
+    origin: 'https://lpg-frontend-omega.vercel.app', 
     credentials: true  
   }));
 app.use(cookieParser())
